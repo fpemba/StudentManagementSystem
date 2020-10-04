@@ -27,6 +27,29 @@ public class Student {
 
         setStudentId();
 
+    }
+
+    private void setStudentId() {
+        id++;
+        this.studentId = gradeLevel + "" + id;
+    }
+
+
+    public void enroll() {
+
+
+        do {
+            System.out.println("Enroll student in a course, Q to quit");
+            Scanner in = new Scanner(System.in);
+            String course = in.nextLine();
+            if (!course.equals("Q".toLowerCase())) {
+                courses = courses + "\n  " + course;
+                tuitionBalance = tuitionBalance + costOfCourse;
+            } else {
+                break;
+            }
+
+        } while (true);
 
     }
 }
