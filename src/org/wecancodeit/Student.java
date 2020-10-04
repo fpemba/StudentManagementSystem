@@ -52,4 +52,8 @@ public class Student {
         } while (true);
 
     }
+
+    public void viewBalace() {
+        System.out.println("Your balance is:  $" + tuitionBalance);
+    }
 }
