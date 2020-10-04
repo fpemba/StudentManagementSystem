@@ -66,4 +66,12 @@ public class Student {
         System.out.println("Thank you for your payment of:$" + payment);
         viewBalance();
     }
+
+    public String showInfo(){
+        return "Name: " + firstName + " " + lastName +
+                "\nGrade Level: " + gradeLevel +
+                "\nStudent ID: " + studentId +
+                "\nCourses Enrolled:" + courses +
+                "\nBalance: $" + tuitionBalance;
+    }
 }
