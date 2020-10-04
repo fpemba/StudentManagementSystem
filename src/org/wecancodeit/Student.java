@@ -53,7 +53,17 @@ public class Student {
 
     }
 
-    public void viewBalace() {
+    public void viewBalance() {
         System.out.println("Your balance is:  $" + tuitionBalance);
+    }
+
+    public void payTuition(){
+        viewBalance();
+        System.out.println("Enter your payment: $");
+        Scanner in = new Scanner(System.in);
+        int payment = in.nextInt();
+        tuitionBalance-=payment;
+        System.out.println("Thank you for your payment of:$" + payment);
+        viewBalance();
     }
 }
